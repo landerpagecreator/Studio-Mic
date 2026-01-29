@@ -1,10 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Primary Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STUDIO REC - Professional Voice Recorder</title>
+    <title>STUDIO REC - Professional Voice Recording & Editing for YouTube Beginners</title>
+    <meta name="description" content="You always think what if i had a mic and a you tube channel with a millions of subscribers. I can do that easily its fun. Oh yeah but i don't have a mic. This why we built Studio Rec the ultimate tool for new beginner youtubers. A real time mic quality!">
+    <meta name="keywords" content="voice recorder, audio recording, YouTube microphone, beginner YouTuber tools, studio mic, online voice recorder, audio editing, podcast recording">
+    <meta name="author" content="Anas Interactive Studios">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://studio-rec.com/">
+    <meta property="og:title" content="STUDIO REC - Professional Voice Recording & Editing for YouTube Beginners">
+    <meta property="og:description" content="You always think what if i had a mic and a you tube channel with a millions of subscribers. I can do that easily its fun. Oh yeah but i don't have a mic. This why we built Studio Rec the ultimate tool for new beginner youtubers. A real time mic quality!">
+    <meta property="og:image" content="https://studio-rec.com/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://studio-rec.com/">
+    <meta property="twitter:title" content="STUDIO REC - Professional Voice Recording & Editing for YouTube Beginners">
+    <meta property="twitter:description" content="You always think what if i had a mic and a you tube channel with a millions of subscribers. I can do that easily its fun. Oh yeah but i don't have a mic. This why we built Studio Rec the ultimate tool for new beginner youtubers. A real time mic quality!">
+    <meta property="twitter:image" content="https://studio-rec.com/images/twitter-image.jpg">
+    
+    <!-- Google Search Console Verification (Replace with your actual verification code) -->
+    <meta name="google-site-verification" content="your-verification-code-here">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://studio-rec.com/">
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "STUDIO REC",
+      "description": "Professional voice recording and editing tool for beginner YouTubers. Get studio-quality audio without expensive equipment.",
+      "url": "https://studio-rec.com/",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Anas Interactive Studios"
+      },
+      "featureList": [
+        "Real-time voice recording",
+        "Noise suppression",
+        "Echo cancellation",
+        "Audio editing tools",
+        "Cloud storage for recordings"
+      ]
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    
     <style>
         :root {
             --primary: #ff3366;
@@ -87,6 +147,36 @@
             font-size: 0.9rem;
             text-transform: uppercase;
             letter-spacing: 3px;
+        }
+        
+        /* SEO Description Section - Added for better content visibility */
+        .seo-description {
+            max-width: 800px;
+            margin: 2rem auto 3rem;
+            padding: 1.5rem;
+            background: rgba(255, 51, 102, 0.05);
+            border-left: 4px solid var(--primary);
+            border-radius: 4px;
+            animation: fadeIn 1s ease-out 0.5s both;
+        }
+        
+        .seo-description h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+        
+        .seo-description p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text);
+        }
+        
+        .seo-description .highlight {
+            color: var(--secondary);
+            font-weight: bold;
         }
         
         .main-grid {
@@ -506,6 +596,41 @@
             text-align: right;
         }
         
+        /* Breadcrumb for SEO */
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .breadcrumb a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Skip to content for accessibility */
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        
+        .skip-to-content:focus {
+            top: 0;
+        }
+        
         @media (max-width: 768px) {
             h1 {
                 font-size: 3rem;
@@ -521,6 +646,14 @@
             
             .tools-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .seo-description {
+                padding: 1rem;
+            }
+            
+            .seo-description h2 {
+                font-size: 1.5rem;
             }
         }
         
@@ -544,16 +677,51 @@
             color: var(--secondary);
             font-weight: 700;
         }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
     </style>
 </head>
 <body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
     <div class="bg-grid"></div>
     
     <div class="container">
+        <!-- Breadcrumb for SEO -->
+        <div class="breadcrumb">
+            <a href="/">Home</a> 
+            <span>&gt;</span>
+            <span>Professional Voice Recorder</span>
+        </div>
+        
         <header>
             <h1>STUDIO REC</h1>
             <div class="tagline">Professional Voice Recording & Editing</div>
         </header>
+        
+        <!-- SEO Description Section -->
+        <section class="seo-description" id="main-content" tabindex="-1">
+            <h2>The Ultimate Tool for Beginner YouTubers</h2>
+            <p>You always think "what if I had a mic and a YouTube channel with millions of subscribers? I can do that easily, it's fun." Oh yeah, but I don't have a mic. This is why we built <span class="highlight">STUDIO REC</span> - the ultimate tool for new beginner YouTubers. Get <span class="highlight">real-time studio mic quality</span> without expensive equipment! Record, edit, and enhance your audio directly in your browser - perfect for podcasters, streamers, and content creators just starting their journey.</p>
+        </section>
         
         <div class="main-grid">
             <!-- Recorder Panel -->
@@ -562,14 +730,14 @@
                 
                 <div class="recorder-visual" id="recorderVisual">
                     <div class="pulse-ring"></div>
-                    <button class="rec-button" id="recordBtn">
+                    <button class="rec-button" id="recordBtn" aria-label="Start/Stop Recording">
                         <div class="rec-icon"></div>
                     </button>
                 </div>
                 
                 <div class="timer" id="timer">00:00:00</div>
                 
-                <canvas id="waveform"></canvas>
+                <canvas id="waveform" aria-label="Audio waveform visualizer"></canvas>
                 
                 <div class="controls">
                     <button class="btn" id="pauseBtn" disabled>Pause</button>
@@ -591,7 +759,7 @@
                             <span>Strength</span>
                             <span id="noiseValue">Maximum</span>
                         </div>
-                        <input type="range" id="noiseSuppression" min="0" max="2" value="2">
+                        <input type="range" id="noiseSuppression" min="0" max="2" value="2" aria-label="Noise suppression level">
                     </div>
                     <div style="font-size: 0.75rem; color: var(--muted); margin-top: 0.5rem;">
                         Removes background noise and hiss from your recording
@@ -605,7 +773,7 @@
                             <span>Level</span>
                             <span id="echoValue">Maximum</span>
                         </div>
-                        <input type="range" id="echoCancellation" min="0" max="2" value="2">
+                        <input type="range" id="echoCancellation" min="0" max="2" value="2" aria-label="Echo cancellation level">
                     </div>
                     <div style="font-size: 0.75rem; color: var(--muted); margin-top: 0.5rem;">
                         Eliminates echo and reverb from your environment
@@ -619,7 +787,7 @@
                             <span>Mode</span>
                             <span id="gainValue">Enabled</span>
                         </div>
-                        <input type="range" id="autoGain" min="0" max="1" value="1">
+                        <input type="range" id="autoGain" min="0" max="1" value="1" aria-label="Auto gain control">
                     </div>
                     <div style="font-size: 0.75rem; color: var(--muted); margin-top: 0.5rem;">
                         Automatically adjusts volume for consistent levels
@@ -633,7 +801,7 @@
                             <span>Quality</span>
                             <span id="sampleRateValue">48 kHz</span>
                         </div>
-                        <input type="range" id="sampleRate" min="0" max="1" value="1">
+                        <input type="range" id="sampleRate" min="0" max="1" value="1" aria-label="Audio sample rate">
                     </div>
                     <div style="font-size: 0.75rem; color: var(--muted); margin-top: 0.5rem;">
                         Higher sample rate = better quality (Studio: 48kHz)
@@ -647,7 +815,7 @@
                             <span>Level</span>
                             <span id="qualityValue">Maximum (320kbps)</span>
                         </div>
-                        <input type="range" id="quality" min="0" max="3" value="3">
+                        <input type="range" id="quality" min="0" max="3" value="3" aria-label="Audio quality bitrate">
                     </div>
                     <div style="font-size: 0.75rem; color: var(--muted); margin-top: 0.5rem;">
                         Higher bitrate = clearer audio with less compression
@@ -661,7 +829,7 @@
                             <span>Mode</span>
                             <span id="voiceEnhanceValue">Enabled</span>
                         </div>
-                        <input type="range" id="voiceEnhance" min="0" max="1" value="1">
+                        <input type="range" id="voiceEnhance" min="0" max="1" value="1" aria-label="Voice enhancement">
                     </div>
                     <div style="font-size: 0.75rem; color: var(--muted); margin-top: 0.5rem;">
                         Optimizes frequency range for clear voice recording
@@ -670,16 +838,14 @@
                 
                 <div class="audio-player" id="audioPlayer" style="display: none;">
                     <div class="playback-controls">
-                        <button class="play-btn" id="playBtn"></button>
-                        <div class="progress-bar" id="progressBar">
+                        <button class="play-btn" id="playBtn" aria-label="Play/Pause audio"></button>
+                        <div class="progress-bar" id="progressBar" role="slider" aria-label="Audio progress" tabindex="0">
                             <div class="progress-fill" id="progressFill"></div>
                         </div>
                         <div class="time-display" id="timeDisplay">00:00 / 00:00</div>
                     </div>
                 </div>
             </div>
-            
-
             
             <!-- Recordings Panel -->
             <div class="panel editor-section">
@@ -694,6 +860,13 @@
     <footer>
         <div class="copyright">
             © 2026 Copyright — <span>Anas Interactive Studios</span> — All Rights Reserved
+        </div>
+        <div class="footer-links">
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="/contact">Contact</a>
+            <a href="/about">About Us</a>
+            <a href="/sitemap">Sitemap</a>
         </div>
     </footer>
 
@@ -741,6 +914,20 @@
                 
                 // Progress bar
                 document.getElementById('progressBar').addEventListener('click', (e) => this.seek(e));
+                
+                // Keyboard shortcuts for accessibility
+                document.addEventListener('keydown', (e) => {
+                    // Space to start/stop recording when not focused on other elements
+                    if (e.code === 'Space' && !e.target.matches('input, button, a')) {
+                        e.preventDefault();
+                        this.toggleRecording();
+                    }
+                    
+                    // Escape to stop recording
+                    if (e.code === 'Escape' && this.isRecording) {
+                        this.stopRecording();
+                    }
+                });
             }
             
             updateSliderValues() {
@@ -1190,10 +1377,10 @@
                             <div class="recording-meta">${rec.duration} • ${rec.date}</div>
                         </div>
                         <div class="recording-actions">
-                            <button class="btn btn-small" onclick="recorder.playRecording(${rec.id})">Play</button>
-                            <button class="btn btn-small" onclick="recorder.renameRecording(${rec.id})">Rename</button>
-                            <button class="btn btn-small" onclick="recorder.downloadRecording(${rec.id})">Download</button>
-                            <button class="btn btn-small" onclick="recorder.deleteRecording(${rec.id})">Delete</button>
+                            <button class="btn btn-small" onclick="recorder.playRecording(${rec.id})" aria-label="Play recording">Play</button>
+                            <button class="btn btn-small" onclick="recorder.renameRecording(${rec.id})" aria-label="Rename recording">Rename</button>
+                            <button class="btn btn-small" onclick="recorder.downloadRecording(${rec.id})" aria-label="Download recording">Download</button>
+                            <button class="btn btn-small" onclick="recorder.deleteRecording(${rec.id})" aria-label="Delete recording">Delete</button>
                         </div>
                     </div>
                 `).join('');
@@ -1284,6 +1471,14 @@
         
         // Initialize the recorder
         const recorder = new StudioRecorder();
+        
+        // Additional SEO enhancement - Track recording stats
+        window.addEventListener('beforeunload', () => {
+            if (recorder.recordings.length > 0) {
+                // Could send analytics here
+                console.log('User created', recorder.recordings.length, 'recordings');
+            }
+        });
     </script>
 </body>
 </html>
