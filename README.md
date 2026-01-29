@@ -1,0 +1,1 @@
+You always think what if i had a mic and a you tube channel with a millions of subscribers. I can do that easily its fun. Oh yeah but i don't have a mic. This why we built Studio Mıc the ultimate tool for new beginner youtubers. A real time mic quality!   
